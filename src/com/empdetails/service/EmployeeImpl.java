@@ -70,4 +70,16 @@ public class EmployeeImpl implements IEmployee{
 		return empNameId;
 	}
 
+	@Override
+	public List<Employee> getByYear(int joiningyear) {
+		// TODO Auto-generated method stub
+		List <Employee> emps=EmpoyeeUtil.showAllEmployee();
+		List <Employee> empByYear=emps.stream()
+		.filter(yr->yr.getJoiningyear()==joiningyear)
+		.collect(Collectors.toList());
+		
+		
+		return empByYear;
+	}
+
 }

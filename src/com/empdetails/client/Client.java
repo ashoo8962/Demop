@@ -58,9 +58,24 @@ public static void main(String[] args) {
 
 
 	} catch (EmployeeIsNotPresentException e) {
-		// TODO Auto-generated catch block
+		// TODO Autofor(Employee empById1:joinYear)
+//	{
+//		System.out.println(empById1);
+//	}-generated catch block
 		e.printStackTrace();
 	}
+	
+	System.out.println("==========================");
+	System.out.println("Getting List of employees joined in 2020 in company");
+	
+	List<Employee> joinYear=empService.getByYear(2020);
+	//System.out.println(joinYear);
+//	
+	for(Employee yr:joinYear)
+	{
+		System.out.println(yr);
+	}
+	
 	
 	
 }

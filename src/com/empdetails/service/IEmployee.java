@@ -12,5 +12,6 @@ public interface IEmployee {
 List<String> getAllRoles();
 List<String> getAllDomain();
 List<Employee> getByRoleId(String name,int id) throws EmployeeIsNotPresentException;
+List<Employee> getByYear(int joiningyear);
 	
 };
