@@ -71,9 +71,9 @@ public static void main(String[] args) {
 	List<Employee> joinYear=empService.getByYear(2020);
 	//System.out.println(joinYear);
 //	
-	for(Employee yr:joinYear)
+	for(Employee empJoinYr:joinYear)
 	{
-		System.out.println(yr);
+		System.out.println(empJoinYr);
 	}
 	
 	
